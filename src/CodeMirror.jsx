@@ -6,12 +6,12 @@ import 'codemirror/addon/edit/matchbrackets';
 import 'codemirror/keymap/sublime';
 import 'codemirror/theme/monokai.css';
 
-const code = 'const a = 0;';
-
 const Codemirror = () => (
   <CodeMirror
+    // height={'h-100'}
+    // height={'inherit'}
     options={{
-      theme: 'monokai',
+      // theme: 'monokai',
       tabSize: 2,
       keyMap: 'sublime',
       mode: 'jsx',
