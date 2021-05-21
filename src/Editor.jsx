@@ -1,7 +1,8 @@
 import React from 'react';
 import { UnControlled as CodeMirrorEditor } from 'react-codemirror2';
 
-import 'codemirror/mode/scheme/scheme.js';
+// import 'codemirror/mode/scheme/scheme.js';
+import 'codemirror/mode/commonlisp/commonlisp.js';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/keymap/sublime.js';
 
@@ -20,7 +21,8 @@ const Editor = () => {
     <CodeMirrorEditor
       value={initialValue}
       options={{
-        mode: 'scheme',
+        // mode: 'text/x-common-lisp',
+        // mode: 'scheme',
         lineNumbers: true,
         tabSize: 2,
         keyMap: 'sublime',
