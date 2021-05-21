@@ -1,11 +1,7 @@
-.CodeMirror {
-  /* color: red; */
-  height: auto;
-  /* min-height: 100%; */
-  /* height: 600px; */
-  /* height: 75vh; */
-  /* display: flex;
-  flex-direction: column; */
+.react-codemirror2 {
+  height: inherit;
+}
 
-  /* height: inherit; */
+.CodeMirror {
+  height: inherit;
 }
