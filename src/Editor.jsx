@@ -1,47 +1,33 @@
 import React from 'react';
 import { UnControlled as CodeMirrorEditor } from 'react-codemirror2';
-// import 'codemirror/mode/javascript/javascript.js';
 
+import 'codemirror/mode/scheme/scheme.js';
 import 'codemirror/lib/codemirror.css';
-// import 'codemirror/theme/material.css';
-// import 'codemirror/addon/scroll/simplescrollbars.css';
-// import 'codemirror/addon/dialog/dialog.css';
-
-import 'codemirror/theme/monokai.css';
-
 import 'codemirror/keymap/sublime.js';
 
-import 'codemirror/addon/edit/closebrackets.js';
-import 'codemirror/addon/edit/matchtags.js';
-import 'codemirror/addon/edit/matchbrackets.js';
-import 'codemirror/addon/edit/closetag.js';
-import 'codemirror/addon/fold/xml-fold.js';
-import 'codemirror/addon/comment/comment.js';
-import 'codemirror/addon/scroll/simplescrollbars.js';
-import 'codemirror/addon/search/searchcursor.js';
-import 'codemirror/addon/search/search.js';
-import 'codemirror/addon/search/jump-to-line.js';
-import 'codemirror/addon/dialog/dialog.js';
-
 const Editor = () => {
+  const initialValue = `(cond ((= a 4) 6)
+      ((= b 4) (+ 6 7 a))
+      (else 25))
+    (+ 2 (if (> b a) b a))
+    (* (cond ((> a b) a)
+        ((< a b) b)
+        (else -1))
+    (+ a 1))
+  `;
 
   return (
     <CodeMirrorEditor
-      // value='<h1>I ♥ react-codemirror2</h1>'
+      value={initialValue}
       options={{
-        // mode: 'javascript',
-        // theme: 'material',
+        mode: 'scheme',
         lineNumbers: true,
         tabSize: 2,
         keyMap: 'sublime',
-        // mode: 'jsx',
       }}
       onChange={(editor, data, value) => {
-        console.log(editor);
-        console.log(data);
         console.log(value);
       }}
-      // className="w-100 h-100"
     />
   );
 };
