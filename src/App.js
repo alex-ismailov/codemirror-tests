@@ -7,7 +7,7 @@ const App = () => (
       <Row className='h-50 justify-content-center'>
         <Col xs={6} className='card h-100 px-0 mt-5'>
           <Tab.Container defaultActiveKey="editor">
-            <Nav variant='tabs'>
+            <Nav variant='tabs' className='justify-content-center'>
               <Nav.Item>
                 <Nav.Link eventKey="editor">Редактор</Nav.Link>
               </Nav.Item>
