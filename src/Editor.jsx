@@ -31,6 +31,7 @@ const Editor = () => {
       onChange={(editor, data, value) => {
         // console.log(value);
       }}
+      className="h-100 w-100"
     />
   );
 };
