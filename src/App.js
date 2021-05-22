@@ -6,7 +6,7 @@ import { Container, Row, Col, Card, Nav, Tab } from 'react-bootstrap';
 const App = () => (
   <Container>
     <div className='vh-100'>
-      <Row className='h-75 justify-content-center'>
+      <Row className='h-50 justify-content-center'>
         <Col xs={6} className='card h-100 px-0 mt-5'>
           <Tab.Container defaultActiveKey="editor">
             <Nav variant='tabs'>
