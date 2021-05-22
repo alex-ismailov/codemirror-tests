@@ -1,7 +1,5 @@
-import CodeBasicEditor from './CodeBasicEditor.jsx';
 import Editor from './Editor.jsx';
-import { Container, Row, Col, Card, Nav, Tab } from 'react-bootstrap';
-// import LivewireTemp from './LivewireTemp.jsx'
+import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 
 const App = () => (
   <Container>
