@@ -20,7 +20,7 @@ const App = () => (
                 <Nav.Link eventKey="output">Вывод</Nav.Link>
               </Nav.Item>
             </Nav>
-            <Tab.Content className='h-100 overflow-auto bg-success'>
+            <Tab.Content className='h-100 overflow-auto'>
               <Tab.Pane eventKey="editor" className='h-100'>
                 <Editor />
               </Tab.Pane>
