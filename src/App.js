@@ -1,5 +1,5 @@
 import Editor from './Editor.jsx';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Tab, Button } from 'react-bootstrap';
 
 const App = () => (
   <Container>
@@ -30,6 +30,10 @@ const App = () => (
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
+        </Col>
+        <div className='w-100'></div>
+        <Col xs={6} className='d-flex px-3 py-2 w-100 justify-content-end border border-top-0 rounded-bottom'>
+          <Button variant="primary">Запустить</Button>
         </Col>
       </Row>
     </div>
